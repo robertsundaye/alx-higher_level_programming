@@ -31,6 +31,6 @@ def run(question):
             score += 10
     print("Your final grade is " + str(score) + "/60")
     with open("grade.txt", "a") as file:
-        file.write(f"{infor} , Grade: {level}, {score}\n")
+        file.write(f"Name: {infor} | Class: Grade {level} | Score: {score} out of 60\n")
 
 run(question)
