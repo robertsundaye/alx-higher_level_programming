@@ -41,7 +41,7 @@ class Rectangle:
     def height(self, value):
         """
         setter functions of height
-        ""i"
+        """
         if value is not int:
             raise TypeError("height must be an integer")
         if value < 0:
