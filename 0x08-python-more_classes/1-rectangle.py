@@ -8,8 +8,8 @@ class Rectangle:
         initiation function of the class
         :parameters: width and height and self
         """
-        self.width = width
-        self.height = height
+        self._width = width
+        self._height = height
 
     @property
     def width(self):
