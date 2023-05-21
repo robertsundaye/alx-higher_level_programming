@@ -8,8 +8,8 @@ class Rectangle:
         initiation function of the class
         :parameters: width and height and self
         """
-        self._width = width
-        self._height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -41,7 +41,7 @@ class Rectangle:
     def height(self, value):
         """
         setter functions of height
-        """
+        ""i"
         if value is not int:
             raise TypeError("height must be an integer")
         if value < 0:
