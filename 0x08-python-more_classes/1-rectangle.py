@@ -25,7 +25,7 @@ class Rectangle:
         :Args: value and self
         """
         if value is not int:
-            raise TypeError("width must be na integer")
+            raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
         self._width = value
@@ -47,3 +47,4 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self._height = value
+
