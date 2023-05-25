@@ -8,8 +8,8 @@ class Rectangle:
         """initializing a new class
 
         Args:
-             width(int): the width of the class
-             height(int): the height of the class
+             width(int): the width of the class.
+             height(int): the height of the class.
         """
         self.width = width
         self.height = height
@@ -19,44 +19,40 @@ class Rectangle:
         """
         Get/Set returns and check the width for exactness
         """
-        return self._width
+        return self.__width
 
-    @width.setter                                                                                                                                def width(self, value):
-
+    @width.setter                                                   def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-        self._width = value
+        self.__width = value
 
     @property
     def height(self):
         """
         Get/Set returns and check the height for exactness
         """
-        return self._height
+        return self.__height
 
     @height.setter
     def height(self, value):
-
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-        self._height = value
+        self.__height = value
 
     def area(self):
         """ return the area of the rectangle """
-        area = self._width * self._height
+        area = (self.__width * self.__height)
         return area
 
     def perimeter(self):
         """ returns the parameter of the ractangle """
-        if self._width == 0 or self._height == 0:
+        if self.__width == 0 or self.__height == 0:
             param = 0
             return param
         else:
-            param = 2 * (self._width + self._height)
+            param = 2 * (self.__width + self.__height)
             return param
-
-
